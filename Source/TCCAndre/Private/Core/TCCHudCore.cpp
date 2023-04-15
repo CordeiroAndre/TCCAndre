@@ -20,6 +20,7 @@ void ATCCHudCore::PushBase( TSubclassOf<UCommonActivatableWidget> CommonActivata
 	if(_baseUIInstance)
 	{
 		_baseUIInstance->PushBase(CommonActivatableWidget);
+		_baseUIInstance->SetVisibility(ESlateVisibility::SelfHitTestInvisible);
 	}
 }
 
